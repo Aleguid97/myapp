@@ -42,7 +42,7 @@ const CitySearch = ({ onCitySelect }) => {
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Button variant="primary ms-3" onClick={handleSelectCity} className="mx-auto">
+        <Button variant="dark ms-3" onClick={handleSelectCity} className="mx-auto">
           Get Weather
         </Button>
       </Form>

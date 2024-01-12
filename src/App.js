@@ -31,8 +31,18 @@ const App = () => {
   return (
     <Container className="mt-5">
       <Navbar bg="light" expand="lg" className="mb-4">
-        <h1 className='ms-3'>App Meteo</h1>
-      </Navbar>
+  <Navbar.Brand>
+    <img
+      src="https://i.pinimg.com/736x/8f/31/62/8f3162729366cb146c54e7dfcbc224d5.jpg"
+      width="150"
+      height="150"
+      className="d-inline-block align-top rounded-circle align-middle"
+      alt="Weather App Logo"
+    />
+    <h1 className='ms-3 d-inline aligne-middle'>App Meteo</h1>
+  </Navbar.Brand>
+</Navbar>
+
       <Row className="">
         <Col md={6}>
           <CitySearch onCitySelect={handleCitySelect} />
