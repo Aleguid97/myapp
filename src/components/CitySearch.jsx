@@ -55,11 +55,13 @@ const CitySearch = ({ onCitySelect }) => {
               <Card key={index} className="m-2 shadow-lg" style={{ width: '10em' }}>
                 <Card.Body>
                   <Card.Title>{cityData.name}, {cityData.sys.country}</Card.Title>
-                  <Card.Img
+                  
+
+                   <Card.Img
                     variant="top"
                     src={`http://openweathermap.org/img/wn/${cityData.weather[0].icon}.png`}
                     alt="Weather Icon"
-                  />
+                  /> 
                   <ListGroup>
                     <ListGroup.Item>Temperature: {cityData.main.temp}°C</ListGroup.Item>
                     <ListGroup.Item>Min Temperature: {cityData.main.temp_min}°C</ListGroup.Item>
